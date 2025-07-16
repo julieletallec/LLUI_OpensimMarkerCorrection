@@ -93,3 +93,19 @@ This module provides utility functions for creating, modifying, and executing Op
 
 ---
 
+
+# `pipeline_utils.py`
+
+This module provides high-level orchestration utilities to simulate, displace, correct, and analyze marker sets using OpenSim pipelines. It automates batch processing of marker perturbation experiments for both real and simulated data.
+
+---
+
+## Contents
+
+| Function | Description |
+|----------|-------------|
+| `run_displacement_pipeline_opensim(...)` | Runs a pipeline to simulate marker displacement on OpenSim-generated data (ground truth), generate noisy marker sets, perform scaling and IK, and assess results through point kinematics. |
+| `run_displacement_correction_pipeline(...)` | Averages multiple displaced static TRC files into a corrected marker file, rescales a model, and reprocesses dynamic trials using the corrected calibration for evaluation. |
+| `run_displacement_pipeline(...)` | Executes a full marker displacement pipeline using real C3D data: generates displaced marker combinations, performs scaling and IK on both real and optionally simulated data, and computes point kinematics for evaluation. |
+
+---
