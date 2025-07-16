@@ -47,3 +47,24 @@ This utility module provides core functionality for processing and preparing mot
 | `extract_gait_cycles` | Extracts left foot 'Foot Off' event times from one or more CSV gait event files and aligns them by cycle index. |
 
 ---
+
+
+# `io_utils.py`
+
+This module provides utility functions for managing input/output operations with TRC and MOT files, as well as organizing calibration data. It supports OpenSim-compatible formats and structured processing workflows.
+
+---
+
+## Contents
+
+| Function | Description |
+|----------|-------------|
+| `find_latest_calibration_file` | Finds the latest `calibration*.c3d` file in the given folder, based on the highest numeric suffix and ignoring files with dots. |
+| `collect_calibration_files` | Iterates through a patient/session directory structure and copies the latest calibration files into a common output directory. |
+| `load_trc_file` | Loads a TRC file and returns both the DataFrame of marker trajectories and the list of marker names. |
+| `load_trc_file_stimuloop` | Loads a TRC file with debug print statements, intended for use with Stimuloop-style marker formats. |
+| `load_mot_file` | Loads an OpenSim `.mot` file by skipping the header and extracting kinematic data and labels. |
+| `save_aligned_trc` | Saves a 3D aligned marker pose array to a new TRC file using the structure from a reference TRC file. |
+| `load_average_and_save_trc_bis` | Loads multiple TRC files, averages the marker data across all files, and saves the result to a new TRC file with a consistent header and marker order. |
+
+---
