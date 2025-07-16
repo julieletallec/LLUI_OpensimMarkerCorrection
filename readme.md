@@ -9,7 +9,7 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 
 | Function | Description |
 |----------|-------------|
-| `compute_rmse(gt, est)` | Compute the root-mean-square error between ground truth and estimated vectors. |
+| `compute_rmse` | Compute the root-mean-square error between ground truth and estimated vectors. |
 | `significance_label` | Return a significance label ("Significant" / "Not significant") based on a p-value and threshold. |
 | `analyze_correction_effect_per_day_with_marker_details__` | Analyze and compare marker-wise RMSE before/after correction across multiple TRC sessions. Includes statistical tests and detailed plots per marker. |
 | `analyze_correction_effect_per_day_kinematics_` | Analyze joint angle (MOT) data to evaluate kinematic correction effects across conditions. Computes RMSE and plots per-variable statistics. |
