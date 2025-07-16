@@ -1,0 +1,922 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenSimDocument Version="20302">
+	<MarkerSet name="GeneratedMarkerSet">
+		<objects>
+			<Marker name="RSHO">
+				<body>torso</body>
+				<location>-0.003 0.425 0.13</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LSHO">
+				<body>torso</body>
+				<location>-0.003 0.425 -0.13</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RHLT">
+				<body>humerus_r</body>
+				<location>0.00587367 -0.129444 0.0220727</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LHLT">
+				<body>humerus_l</body>
+				<location>0.00580709 -0.125721 -0.0298131</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RHVT">
+				<body>humerus_r</body>
+				<location>0.0449329 -0.129807 6.42431e-06</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LHVT">
+				<body>humerus_l</body>
+				<location>0.0449329 -0.129807 -6.42431e-06</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="MSTC">
+				<body>torso</body>
+				<location>0.0426971 0.379441 -0.00194467</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RLEK">
+				<body>humerus_r</body>
+				<location>0.015 -0.28 0.04</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RMEK">
+				<body>humerus_r</body>
+				<location>0.00225 -0.286 -0.046</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LLEK">
+				<body>humerus_l</body>
+				<location>0.015 -0.28 -0.04</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LMEK">
+				<body>humerus_l</body>
+				<location>0.00225005 -0.286 0.046</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RFRA">
+				<body>ulna_r</body>
+				<location>-0.00902451 -0.118517 0.0659393</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RFUL">
+				<body>ulna_r</body>
+				<location>-0.0315658 -0.125336 -0.0131706</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LFRA">
+				<body>ulna_l</body>
+				<location>-0.00902451 -0.118517 -0.0659393</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LFUL">
+				<body>ulna_l</body>
+				<location>-0.0315658 -0.125336 0.0131706</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RWRA">
+				<body>radius_r</body>
+				<location>0.0005 -0.225 0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RWUL">
+				<body>radius_r</body>
+				<location>-0.022 -0.225 -0.022</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LWRA">
+				<body>radius_l</body>
+				<location>0.0005 -0.225 -0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LWUL">
+				<body>radius_l</body>
+				<location>-0.022 -0.225 0.022</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RASI">
+				<body>pelvis</body>
+				<location>0.00725057 -0.00588547 0.11264</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LASI">
+				<body>pelvis</body>
+				<location>0.00725057 -0.00588547 -0.11264</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTMS">
+				<body>pelvis</body>
+				<location>-0.0100007 0.0353609 0.141715</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTMS">
+				<body>pelvis</body>
+				<location>-0.0100007 0.0353609 -0.141715</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RPSI">
+				<body>pelvis</body>
+				<location>-0.155 0.035 0.045</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LPSI">
+				<body>pelvis</body>
+				<location>-0.155 0.035 -0.045</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="SACR">
+				<body>pelvis</body>
+				<location>-0.143659 0.0561014 0</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="CVC7">
+				<body>torso</body>
+				<location>-0.085 0.435 0.00165426</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LBHD">
+				<body>torso</body>
+				<location>-0.0686083 0.623087 -0.0363533</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RBHD">
+				<body>torso</body>
+				<location>-0.0686083 0.623087 0.0363533</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LFHD">
+				<body>torso</body>
+				<location>0.0707969 0.620352 -0.0415974</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RFHD">
+				<body>torso</body>
+				<location>0.0707969 0.620352 0.0415974</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTLH">
+				<body>femur_r</body>
+				<location>0.0100122 -0.149218 0.0930769</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTLH">
+				<body>femur_l</body>
+				<location>0.0100122 -0.149218 -0.0930769</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTLL">
+				<body>femur_r</body>
+				<location>0.0117212 -0.283283 0.079093</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTLL">
+				<body>femur_l</body>
+				<location>0.0117212 -0.283283 -0.079093</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTFR">
+				<body>femur_r</body>
+				<location>0.0807379 -0.261245 0.00968276</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTFR">
+				<body>femur_l</body>
+				<location>0.0807379 -0.261245 -0.00968276</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RLCO">
+				<body>femur_r</body>
+				<location>0 -0.404 0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LLCO">
+				<body>femur_l</body>
+				<location>0 -0.404 -0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RMCO">
+				<body>femur_r</body>
+				<location>0 -0.404 -0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LMCO">
+				<body>femur_l</body>
+				<location>0 -0.404 0.05</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTIB">
+				<body>tibia_r</body>
+				<location>-0.00379356 -0.0427297 0.0519845</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTIB">
+				<body>tibia_l</body>
+				<location>-0.00379356 -0.0427297 -0.0519845</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTTT">
+				<body>tibia_r</body>
+				<location>0.0565283 -0.0443862 0.000724809</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTTT">
+				<body>tibia_l</body>
+				<location>0.0565283 -0.0443862 -0.000724809</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTMT">
+				<body>tibia_r</body>
+				<location>0.0369643 -0.230107 -0.00391699</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTMT">
+				<body>tibia_l</body>
+				<location>0.0369643 -0.230107 0.00391699</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTLF">
+				<body>tibia_r</body>
+				<location>0.0113793 -0.295236 0.0553541</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTLF">
+				<body>tibia_l</body>
+				<location>0.0113793 -0.295236 -0.0553541</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RLMA">
+				<body>tibia_r</body>
+				<location>-0.005 -0.3888 0.053</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LLMA">
+				<body>tibia_l</body>
+				<location>-0.005 -0.3888 -0.053</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RMMA">
+				<body>tibia_r</body>
+				<location>0.006 -0.3888 -0.038</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LMMA">
+				<body>tibia_l</body>
+				<location>0.006 -0.3888 0.038</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTO1">
+				<body>calcn_r</body>
+				<location>0.233469 0.0161821 -0.0204925</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTO1">
+				<body>calcn_l</body>
+				<location>0.233469 0.0161821 0.0204925</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTO3">
+				<body>calcn_r</body>
+				<location>0.178155 0.0197917 0.0112671</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTO3">
+				<body>calcn_l</body>
+				<location>0.178155 0.0197917 -0.0112671</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RTO5">
+				<body>calcn_r</body>
+				<location>0.18776 0.010815 0.0455057</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LTO5">
+				<body>calcn_l</body>
+				<location>0.18776 0.010815 -0.0455057</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="RHEE">
+				<body>calcn_r</body>
+				<location>-0.025 0.02 -0.005</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+			<Marker name="LHEE">
+				<body>calcn_l</body>
+				<location>-0.025 0.02 0.005</location>
+				<fixed>true</fixed>
+				<VisibleObject name="">
+					<GeometrySet name="">
+						<objects />
+						<groups />
+					</GeometrySet>
+					<scale_factors>1.00000000 1.00000000 1.00000000</scale_factors>
+					<transform>0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 0.00000000</transform>
+					<show_axes>false</show_axes>
+					<display_preference>4</display_preference>
+				</VisibleObject>
+			</Marker>
+		</objects>
+	</MarkerSet>
+</OpenSimDocument>
