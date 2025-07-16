@@ -1,0 +1,257 @@
+<?xml version="1.0" ?>
+<OpenSimDocument Version="30000">
+    <InverseKinematicsTool name="subject01">
+        <model_file>Aline\Aline_scaled_model_markers.osim</model_file>
+        <constraint_weight>20</constraint_weight>
+        <accuracy>1e-05</accuracy>
+        <IKTaskSet name="ik_tasks">
+            <objects>
+                <IKMarkerTask name="RSHO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LSHO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RHLT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LHLT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RHVT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LHVT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="MSTC">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RLEK">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RMEK">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LLEK">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LMEK">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RFRA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RFUL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LFRA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LFUL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RWRA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RWUL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LWRA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LWUL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RASI">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTMS">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTMS">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RPSI">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LPSI">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="SACR">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="CVC7">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LBHD">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RBHD">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LFHD">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RFHD">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTLH">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTLH">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTLL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTLL">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTFR">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTFR">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RLCO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LLCO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RMCO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LMCO">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTIB">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTIB">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTTT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTTT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTMT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTMT">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTLF">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTLF">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RLMA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LLMA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RMMA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LMMA">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTO1">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTO1">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTO3">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTO3">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RTO5">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LTO5">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="RHEE">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+                <IKMarkerTask name="LHEE">
+                    <apply>true</apply>
+                    <weight>1.0</weight>
+                </IKMarkerTask>
+            </objects>
+            <groups/>
+        </IKTaskSet>
+        <marker_file>pre8walk01.trc</marker_file>
+        <coordinate_file/>
+        <time_range>0 4.65</time_range>
+        <output_motion_file>Aline\pre8walk01__motion.mot</output_motion_file>
+    </InverseKinematicsTool>
+</OpenSimDocument>

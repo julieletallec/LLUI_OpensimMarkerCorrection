@@ -1,0 +1,701 @@
+<OpenSimDocument Version="40500">
+	<AnalyzeTool name="3DGaitModel2354-scaled">
+		<model_file>Aline\Aline_scaled_model_markers.osim</model_file>
+		<replace_force_set>false</replace_force_set>
+		<force_set_files />
+		<results_directory>Aline\updated_pointkinematics</results_directory>
+		<output_precision>8</output_precision>
+		<initial_time>0.000</initial_time>
+		<final_time>4.650</final_time>
+		<solve_for_equilibrium_for_auxiliary_states>false</solve_for_equilibrium_for_auxiliary_states>
+		<maximum_number_of_integrator_steps>20000</maximum_number_of_integrator_steps>
+		<maximum_integrator_step_size>1</maximum_integrator_step_size>
+		<minimum_integrator_step_size>1e-08</minimum_integrator_step_size>
+		<integrator_error_tolerance>1e-05</integrator_error_tolerance>
+		<AnalysisSet name="Analyses">
+			<objects>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RSHO</point_name>
+					<point>-0.003 0.425 0.13</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LSHO</point_name>
+					<point>-0.003 0.425 -0.13</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RHLT</point_name>
+					<point>0.00587367 -0.129444 0.0220727</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LHLT</point_name>
+					<point>0.00587367 -0.129444 -0.0220727</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RHVT</point_name>
+					<point>0.0449329 -0.129807 6.42431e-06</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LHVT</point_name>
+					<point>0.0449329 -0.129807 -6.42431e-06</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>MSTC</point_name>
+					<point>0.0426971 0.379441 -0.00194467</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RLEK</point_name>
+					<point>0.015 -0.28 0.04</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RMEK</point_name>
+					<point>0.00225 -0.286 -0.046</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LLEK</point_name>
+					<point>0.015 -0.28 -0.04</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>humerus_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LMEK</point_name>
+					<point>0.00225005 -0.286 0.046</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>ulna_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RFRA</point_name>
+					<point>-0.00902451 -0.118517 0.0659393</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>ulna_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RFUL</point_name>
+					<point>-0.0315658 -0.125336 -0.0131706</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>ulna_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LFRA</point_name>
+					<point>-0.00902451 -0.118517 -0.0659393</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>ulna_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LFUL</point_name>
+					<point>-0.0315658 -0.125336 0.0131706</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>radius_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RWRA</point_name>
+					<point>0.0005 -0.225 0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>radius_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RWUL</point_name>
+					<point>-0.022 -0.225 -0.022</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>radius_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LWRA</point_name>
+					<point>0.0005 -0.225 -0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>radius_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LWUL</point_name>
+					<point>-0.022 -0.225 0.022</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RASI</point_name>
+					<point>0.0068271 0.0165658 0.125314</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTMS</point_name>
+					<point>-0.0395501 0.0852442 -0.113105</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTMS</point_name>
+					<point>-0.0395501 0.0852442 0.113105</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RPSI</point_name>
+					<point>-0.155 0.035 0.045</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LPSI</point_name>
+					<point>-0.155 0.035 -0.045</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>SACR</point_name>
+					<point>-0.143659 0.0561014 0</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>CVC7</point_name>
+					<point>-0.085 0.435 0.00165426</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LBHD</point_name>
+					<point>-0.0686083 0.623087 -0.0363533</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RBHD</point_name>
+					<point>-0.0686083 0.623087 0.0363533</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LFHD</point_name>
+					<point>0.0707969 0.620352 -0.0415974</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>torso</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RFHD</point_name>
+					<point>0.0707969 0.620352 0.0415974</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTLH</point_name>
+					<point>0.0100122 -0.149218 0.0930769</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTLH</point_name>
+					<point>0.0100122 -0.149218 -0.0930769</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTLL</point_name>
+					<point>0.0117212 -0.283283 0.079093</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTLL</point_name>
+					<point>0.0117212 -0.283283 -0.079093</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTFR</point_name>
+					<point>0.0807379 -0.261245 0.00968276</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTFR</point_name>
+					<point>0.0807379 -0.261245 -0.00968276</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RLCO</point_name>
+					<point>0 -0.404 0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LLCO</point_name>
+					<point>0 -0.404 -0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RMCO</point_name>
+					<point>0 -0.404 -0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>femur_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LMCO</point_name>
+					<point>0 -0.404 0.05</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTIB</point_name>
+					<point>-0.00379356 -0.0427297 0.0519845</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTIB</point_name>
+					<point>-0.00379356 -0.0427297 -0.0519845</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTTT</point_name>
+					<point>0.0565283 -0.0443862 0.000724809</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTTT</point_name>
+					<point>0.0565283 -0.0443862 -0.000724809</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTMT</point_name>
+					<point>0.0369643 -0.230107 -0.00391699</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTMT</point_name>
+					<point>0.0369643 -0.230107 0.00391699</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTLF</point_name>
+					<point>0.0113793 -0.295236 0.0553541</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTLF</point_name>
+					<point>0.0113793 -0.295236 -0.0553541</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RLMA</point_name>
+					<point>-0.005 -0.3888 0.053</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LLMA</point_name>
+					<point>-0.005 -0.3888 -0.053</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RMMA</point_name>
+					<point>0.006 -0.3888 -0.038</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>tibia_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LMMA</point_name>
+					<point>0.006 -0.3888 0.038</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTO1</point_name>
+					<point>0.233469 0.0161821 -0.0204925</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTO1</point_name>
+					<point>0.233469 0.0161821 0.0204925</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTO3</point_name>
+					<point>0.178155 0.0197917 0.0112671</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTO3</point_name>
+					<point>0.178155 0.0197917 -0.0112671</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RTO5</point_name>
+					<point>0.18776 0.010815 0.0455057</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LTO5</point_name>
+					<point>0.18776 0.010815 -0.0455057</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_r</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>RHEE</point_name>
+					<point>-0.025 0.02 -0.005</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>calcn_l</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LHEE</point_name>
+					<point>-0.025 0.02 0.005</point>
+				</PointKinematics>
+				<PointKinematics name="PointKinematics">
+					<on>true</on>
+					<start_time>0</start_time>
+					<end_time>199.5</end_time>
+					<step_interval>1</step_interval>
+					<in_degrees>true</in_degrees>
+					<body_name>pelvis</body_name>
+					<relative_to_body_name>none</relative_to_body_name>
+					<point_name>LASI</point_name>
+					<point>0.00725057 -0.00588547 -0.11264</point>
+				</PointKinematics>
+			</objects>
+			<groups />
+		</AnalysisSet>
+		<ControllerSet name="Controllers">
+			<objects />
+			<groups />
+		</ControllerSet>
+		<external_loads_file />
+		<states_file />
+		<coordinates_file>Aline\pre8walk01__motion.mot</coordinates_file>
+		<speeds_file />
+		<lowpass_cutoff_frequency_for_coordinates>-1</lowpass_cutoff_frequency_for_coordinates>
+	</AnalyzeTool>
+</OpenSimDocument>
