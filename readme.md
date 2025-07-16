@@ -5,7 +5,7 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 
 ---
 
-## 📦 Contents
+## Contents
 
 | Function | Description |
 |----------|-------------|
@@ -19,17 +19,3 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 | **`compare_markers_by_day(csv_folder, subject, output_plot_prefix=None)`** | Analyze marker error distributions per day, grouped by body region. Highlights segment-wise drift or inconsistency. |
 
 ---
-
-## 🔧 Usage
-
-```python
-import analysis_utils as au
-
-# Example
-au.analyze_correction_effect_per_day_with_marker_details__(
-    ground_truth_path="GT.trc",
-    files_before=["day1.trc", "day2.trc"],
-    files_after=["day1_corrected.trc", "day2_corrected.trc"],
-    markers_to_compare=["LASIS", "RASIS", "LPSIS", "RPSIS"]
-)
-
