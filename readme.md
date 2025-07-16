@@ -68,3 +68,28 @@ This module provides utility functions for managing input/output operations with
 | `load_average_and_save_trc_bis` | Loads multiple TRC files, averages the marker data across all files, and saves the result to a new TRC file with a consistent header and marker order. |
 
 ---
+
+
+# `opensim_kinematics_utils.py`
+
+This module provides utility functions for creating, modifying, and executing OpenSim XML configurations for scaling, inverse kinematics, and point kinematics workflows. It also includes tools for marker processing and TRC reconstruction from analysis results.
+
+---
+
+## Contents
+
+| Function | Description |
+|----------|-------------|
+| `update_scaling_xml(...)` | Updates a scaling setup XML file by replacing parameters like mass, height, marker files, and model output paths. |
+| `generate_ik_setup_xml(...)` | Creates an Inverse Kinematics XML setup file with marker and coordinate tasks, using model and marker input files. |
+| `generate_pointkin_xml_from_marker_file(...)` | Builds an AnalyzeTool XML file with `PointKinematics` analyses for each marker defined in a marker XML file. |
+| `generate_trc_from_stos(...)` | Reads multiple `.sto` files from a `PointKinematics` analysis and compiles them into a single `.trc` file. |
+| `add_marker_to_opensim_file(...)` | Adds one or more markers to an existing OpenSim marker set XML, including geometry and visualization settings. |
+| `deplacer_markers(...)` | Applies translations to specified markers in a marker XML file by adjusting their coordinate values. |
+| `extract_markers_from_xml(xml_file_path)` | Parses an OpenSim marker XML file and returns a dictionary of marker names and their coordinates. |
+| `scaling(...)` | Runs the full OpenSim scaling workflow: converts static C3D to TRC, updates XML config, runs ScaleTool, and manages output. |
+| `inverse_kinematics(...)` | Executes the Inverse Kinematics tool based on motion and calibration data, producing a `.mot` file. |
+| `point_kinematics(...)` | Runs a PointKinematics analysis for specified markers and converts the result into a usable `.trc` file. |
+
+---
+
