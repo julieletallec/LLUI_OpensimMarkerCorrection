@@ -136,6 +136,72 @@ This notebook performs **marker displacement correction** across 15 days of repe
 ## 📁 TEST_PIPELINES
 ### 📄 `01_test_caren_simulated_displacements.ipynb`
 
+#### ✅ What This Notebook Does
+
+This notebook **simulates and evaluates marker displacement scenarios** using motion capture data recorded with the CAREN system. It performs a **systematic validation** of the correction pipeline by:
+
+1. **Generating Ground Truth Data**
+   - Uses unaltered markers to scale a model, compute joint angles (`.mot`) and marker trajectories (`.trc`) using OpenSim.
+   - Ground truth `.trc` and `.mot` files undergo the exact same processing as displaced and corrected files to ensure fair comparison.
+
+2. **Simulating Marker Displacement**
+   - Simulated displacements are **not synthetically applied** but are instead **recorded using additional physical markers** placed near the true anatomical landmarks.
+   - These displaced markers are present in the original `.c3d` files and follow a naming convention like:
+     - `RASIS0`, `RASIS90`, `RASIS180`, `RASIS270`
+     - where the suffix indicates the **directional offset** (e.g., 90° = anterior)
+   - 15 unique displacement combinations are defined and tested by selecting different versions of these displaced markers.
+
+3. **Correction via Averaged Calibration**
+   - A model is built using the average of all 15 displaced calibration trials.
+   - It is then used to correct the dynamic trials and generate **corrected `.trc` and `.mot` files**.
+   - These are compared against both the displaced and ground truth versions using RMSE and statistical testing.
+
+> 🎯 This notebook is used to **quantify how displacement affects kinematic analysis**, and how effective the correction process is in recovering ground truth.
+
+
+#### 🎯 Goal & Outcome
+
+- **Goal:** Assess and visualize the effects of marker displacements on gait analysis, and evaluate how correction improves results.
+- **Outcome:** 
+  - 15 displaced and 15 corrected marker/joint angle files (`.trc`, `.mot`)
+  - Ground truth reference files
+  - RMSE & statistical analysis (marker-level and joint-level)
+
+
+#### 📂 Requirements to Run
+
+- A calibration `.c3d` file containing **both ground truth and displaced markers**
+- A dynamic walking `.c3d` trial with the same marker layout
+- A `.csv` gait events file aligned to the dynamic trial
+- OpenSim musculoskeletal model and marker set (`.osim`, `.xml`)
+- A scaling setup template (`.xml`)
+
+#### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `SUBJECT` | Participant identifier | `"Mathieu"` |
+| `N_CYCLES` | Number of gait cycles to include | `10` |
+| `N_COMBOS` | Number of marker displacement configurations to evaluate | `15` |
+| `MARKERS_WITH_DISPLACEMENT` | Markers with multiple placed versions (displaced) | `["RASIS", "LASIS", "RPSIS", "LPSIS"]` |
+| `MARKERS_WITHOUT_DISPLACEMENT` | Markers placed only once (ground truth only) | `["LLTHI", "LHEE", ..., "T10"]` |
+| `COMBOS` | List of marker combinations to use for each displacement trial | `[['RASIS90', 'LASIS0', ...], ...]` |
+| `KINEMATICS` | Joint angles to track and compare | `["hip_flexion_r", "pelvis_tilt", ...]` |
+| `RESULTS_FOLDER` | Folder to store all outputs | `"test_caren_displacements_Mathieu"` |
+
+
+#### 🔁 Adapt for New Experiments
+
+To use this notebook with a **different experimental setup**, you only need to update a few key parameters:
+
+- **Change which markers are considered displaced** by editing `MARKERS_WITH_DISPLACEMENT`.
+- **Adjust the marker combination sets** via the `COMBOS` list.
+- **Replace `.c3d` and marker set files** if working with a new subject or setup.
+- Optionally, change `KINEMATICS` if evaluating different joint angles.
+
+This makes the pipeline **fully reusable** for testing other marker placements, participant configurations, or perturbation strategies.
+
+
 ### 📄 `02_test_opensim_displacements.ipynb`
 
 ### 📄 `03_test_quantification_of_model_displacements.ipynb`
