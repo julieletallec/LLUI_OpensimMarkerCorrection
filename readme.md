@@ -569,7 +569,7 @@ This file defines the configuration for running an **Inverse Kinematics (IK)** a
     <time_range>0 4.65</time_range>                  <!-- Start and end time of the trial -->
     <output_motion_file>...</output_motion_file>     <!-- Output .mot file with joint angles -->
 </InverseKinematicsTool>
-
+```
 #### 🛠️ What Can Be Modified?
 
 You can adapt this file to your specific experimental setup or subject data:
