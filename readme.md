@@ -1,3 +1,8 @@
+
+# DETAILED FILE DESCRIPTION
+# 📁 example_model_files
+---
+# 📁 utils
 ## `analysis_utils.py`
 
 This module provides a suite of analysis and visualization tools for evaluating the **effectiveness of motion data correction**, focusing on **marker trajectories (TRC)** and **kinematic signals (MOT)**.  
