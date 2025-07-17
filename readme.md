@@ -543,6 +543,69 @@ You are free to:
 - Marker weights affect how well the virtual model aligns with the actual marker data.
 - Marker names and segment references must exactly match those in the marker set file and the OpenSim model.
 
+### 📄 Inverse Kinematics Setup File (`inversekinematics_setup.xml`)
+
+This file defines the configuration for running an **Inverse Kinematics (IK)** analysis using OpenSim. The IK process matches experimental marker positions (from a `.trc` file) to a musculoskeletal model, generating a time series of joint angles (`.mot` file) that best fits the motion.
+
+#### 🧱 File Structure
+
+```xml
+<InverseKinematicsTool>
+    <model_file>...</model_file>                     <!-- Path to the scaled .osim model -->
+    <constraint_weight>...</constraint_weight>       <!-- Weighting of marker errors vs. coordinate errors -->
+    <accuracy>...</accuracy>                         <!-- Solver tolerance -->
+    
+    <IKTaskSet>
+        <objects>
+            <IKMarkerTask name="...">                <!-- List of markers to be tracked -->
+                <apply>true</apply>                  <!-- Whether this marker is used in IK -->
+                <weight>1.0</weight>                 <!-- Importance of this marker -->
+            </IKMarkerTask>
+            ...
+        </objects>
+    </IKTaskSet>
+
+    <marker_file>...</marker_file>                   <!-- Input .trc file with marker data -->
+    <time_range>0 4.65</time_range>                  <!-- Start and end time of the trial -->
+    <output_motion_file>...</output_motion_file>     <!-- Output .mot file with joint angles -->
+</InverseKinematicsTool>
+
+#### 🛠️ What Can Be Modified?
+
+You can adapt this file to your specific experimental setup or subject data:
+
+- **`<model_file>`**:  
+  Set to the path of your **scaled `.osim` model**.
+
+- **`<marker_file>`**:  
+  Set to the `.trc` file containing your **experimental marker trajectories**.
+
+- **`<output_motion_file>`**:  
+  Define the **filename and path** of the resulting joint angle file.
+
+- **`<time_range>`**:  
+  Adjust based on the **duration of your trial** (in seconds).
+
+- **`<IKMarkerTask>` blocks**:  
+  - ✅ You can **add or remove markers**.
+  - ✅ You can set `<apply>` to `false` for markers to **exclude them** from IK.
+  - ✅ You can **adjust `<weight>` values** to prioritize more reliable markers.
+
+- **`<constraint_weight>` and `<accuracy>`**:  
+  Tweak these parameters to control the **IK solver behavior**.  
+  A **higher constraint weight** prioritizes marker tracking over joint coordinate accuracy.
+
+
+
+#### ⚠️ Notes
+
+- The list of `<IKMarkerTask>` entries must **match the marker names** in your `.trc` file exactly.
+- If you experience **tracking artifacts**, try:
+  - Reducing the **weight** of noisy markers.
+  - Disabling them using `<apply>false</apply>`.
+- Ensure your **`<time_range>`** falls within the actual **duration of your `.trc` data**.
+- You can create **multiple setup files** for different trials, tasks, or marker configurations.
+
 ---
 ## 📁 utils
 ### 📄 `analysis_utils.py`
