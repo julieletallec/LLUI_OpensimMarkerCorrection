@@ -1,5 +1,19 @@
 
 # DETAILED FILE DESCRIPTION
+# 📁 FINAL_USABLE_PIPELINES
+---
+# 📁 TEST_PIPELINES
+---
+# 📁 example_c3d_files
+---
+# 📁 example_gaitevents_files
+---
+# 📁 example_marker_files
+---
+# 📁 example_model_files
+---
+# 📁 example_osim_setup_files
+---
 # 📁 example_model_files
 ---
 # 📁 utils
