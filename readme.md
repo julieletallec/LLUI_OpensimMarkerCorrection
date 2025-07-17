@@ -606,6 +606,50 @@ You can adapt this file to your specific experimental setup or subject data:
 - Ensure your **`<time_range>`** falls within the actual **duration of your `.trc` data**.
 - You can create **multiple setup files** for different trials, tasks, or marker configurations.
 
+### 📄 Point Kinematics Setup File (`pointkinematics_setup.xml`)
+
+This XML file configures an OpenSim `AnalyzeTool` to compute the 3D positions of selected anatomical points during a motion trial using the model and corresponding joint angle data.
+
+The setup file contains a series of `<PointKinematics>` blocks, each one specifying:
+
+- The body segment the point is attached to (`<body_name>`)
+- The name of the point to be tracked (`<point_name>`)
+- The 3D location of the point in the body segment frame (`<point>`)
+- The time range (`<start_time>`, `<end_time>`) and sampling rate (`<step_interval>`) for the analysis
+- Whether the results should be reported in degrees (`<in_degrees>`)
+
+This setup uses a scaled model (`<model_file>`) and a `.mot` file containing joint angles (`<coordinates_file>`) to calculate where each point is located in global space at each timestep.
+
+#### 🛠️ What Can Be Modified?
+
+You can adapt this file for your own experiments:
+
+- `<model_file>`:  
+  Path to your scaled `.osim` model.
+
+- `<coordinates_file>`:  
+  Joint angle motion file from inverse kinematics (usually ends in `.mot`).
+
+- `<results_directory>`:  
+  Output folder for the computed point kinematics.
+
+- `<initial_time>` / `<final_time>`:  
+  Start and end time (in seconds) of the motion to analyze.
+
+- `<PointKinematics>` blocks:
+  - You can add or remove points.
+  - You can change the `point_name`, `body_name`, and `point` coordinates.
+  - You can set `<relative_to_body_name>` to compute positions relative to another body segment instead of global frame.
+  - Use `<step_interval>` to adjust sampling rate of output.
+
+
+#### ⚠️ Notes
+
+- Make sure the body segments (`<body_name>`) exist in your OpenSim model.
+- The point coordinates should match the anatomical landmarks you wish to track.
+- If you add new markers to the model (e.g. to simulate displacements), include corresponding `<PointKinematics>` entries here to track them.
+- The time range must match the range of your `.mot` file or you will get empty or incorrect results.
+
 ---
 ## 📁 utils
 ### 📄 `analysis_utils.py`
