@@ -16,16 +16,12 @@ This notebook simulates the use of a **different marker set** by:
 
 > 🔄 This simulates marker placement variation or alternative setups, useful for validation, robustness testing, or sensor configuration evaluation.
 
----
-
-### 🎯 Goal & Outcome
+#### 🎯 Goal & Outcome
 
 - **Goal:** Generate new `.trc` and `.c3d` files representing the motion as if it had been captured using a different marker configuration.
 - **Outcome:** You get transformed files with updated marker trajectories aligned to the new marker set.
 
----
-
-### 📂 Requirements to Run
+#### 📂 Requirements to Run
 
 - A C3D file for static calibration
 - A C3D file for dynamic motion capture
@@ -34,9 +30,7 @@ This notebook simulates the use of a **different marker set** by:
 - An OpenSim musculoskeletal model
 - A scaling setup XML template
 
----
-
-### 🔧 Changeable Parameters
+#### 🔧 Changeable Parameters
 
 | Variable | Description | Example |
 |----------|-------------|---------|
