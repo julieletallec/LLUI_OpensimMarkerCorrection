@@ -383,6 +383,34 @@ We use two types of C3D trials:
 
 ---
 ## 📁 example_gaitevents_files
+These files contain **gait event timings** extracted from the motion capture trials (e.g., heel strikes, toe-offs).
+
+They are used to:
+
+- Automatically detect and extract a given number of gait cycles (e.g., first 10 cycles)
+- Define the **start and end times** of the dynamic trials used in Inverse and Point Kinematics
+- Ensure synchronized comparisons across ground truth, displaced, and corrected motion
+
+### 📋 Structure
+
+Each `.csv` file typically includes:
+
+| Time (s) | Event         |
+|----------|---------------|
+| 1.23     | RHS (Right Heel Strike) |
+| 2.45     | LHS (Left Heel Strike)  |
+| ...      | ...           |
+
+Only the **Time** column is usually used in scripts that extract the number of gait cycles (`N_CYCLES`), by selecting the first `2 * N_CYCLES` rows.
+
+### 🛠️ What Can Be Modified?
+
+- You can **replace the file** with gait event data from other subjects or trials.
+- The only requirement is that the file must contain **chronologically ordered timestamps** of heel strikes.
+- Additional event labels are ignored by most scripts.
+
+⚠️ If your file structure differs (e.g., includes headers, extra columns, or different event labels), make sure to **adapt the code** that reads it accordingly.
+
 ---
 ## 📁 example_marker_files
 
