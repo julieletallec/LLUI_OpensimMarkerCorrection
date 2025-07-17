@@ -363,6 +363,28 @@ You can easily adapt this pipeline for:
 ## 📁 example_gaitevents_files
 ---
 ## 📁 example_marker_files
+
+This folder contains XML files that define marker sets for use in OpenSim simulations.
+
+#### 🧩 What is a marker set?
+A marker set in OpenSim specifies:
+- The **name** of each marker.
+- The **body segment** it is attached to (e.g., `pelvis`, `femur_r`, etc.).
+- The **location** (3D coordinates in meters) of the marker relative to its segment.
+- Additional visual and simulation parameters (e.g., visibility, fixed status).
+
+Each `<Marker>` in the XML file looks like this:
+
+```xml
+<Marker name="LASIS">
+    <body>pelvis</body>
+    <location>0.02 0.03 -0.128</location>
+    <fixed>true</fixed>
+    ...
+</Marker>
+
+
+
 ---
 ## 📁 example_model_files
 ---
