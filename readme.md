@@ -3,6 +3,53 @@
 ---
 ## 📁 FINAL_USABLE_PIPELINES
 ### 📄 `01_translate_markerset.ipynb`
+---
+
+#### ✅ What This Notebook Does
+
+This notebook simulates the use of a **different marker set** by:
+
+1. **Scaling** an OpenSim model using a C3D calibration file and the original markers.
+2. Running **Inverse Kinematics** (IK) on both calibration and dynamic trials with the original marker set.
+3. Running **Point Kinematics** using a **new marker set** on the IK results.
+4. Saving the resulting `.trc` files and converting them to `.c3d` files with embedded force/analog data.
+
+> 🔄 This simulates marker placement variation or alternative setups, useful for validation, robustness testing, or sensor configuration evaluation.
+
+---
+
+### 🎯 Goal & Outcome
+
+- **Goal:** Generate new `.trc` and `.c3d` files representing the motion as if it had been captured using a different marker configuration.
+- **Outcome:** You get transformed files with updated marker trajectories aligned to the new marker set.
+
+---
+
+### 📂 Requirements to Run
+
+- A C3D file for static calibration
+- A C3D file for dynamic motion capture
+- A model marker set XML (original configuration)
+- A new marker set XML (target configuration)
+- An OpenSim musculoskeletal model
+- A scaling setup XML template
+
+---
+
+### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `MODEL` | Path to the OpenSim model file | `"gait2354_simbody.osim"` |
+| `ORIGINAL_MARKERSET_FILE` | Path to original marker set XML | `"example_markerset_files/HMB2_MODEL_markers.xml"` |
+| `NEW_MARKERSET_FILE` | Path to new marker set XML | `"example_markerset_files/HMB2_MODEL_LUCILLE_markers.xml"` |
+| `C3D_CALIBRATION_FILE` | Path to static trial | `"example_c3d_files/Calibration_Mathieu.c3d"` |
+| `C3D_DYNAMIC_FILE` | Path to dynamic walking trial | `"example_c3d_files/Walk_Mathieu.c3d"` |
+| `TEMPLATE_SCALING_SETUP_FILE` | XML config template for scaling | `"template_scaling_setup.xml"` |
+| `RESULTS_FOLDER` | Folder where outputs are saved | `"results_marker_translation"` |
+| `PREFIX` | Prefix used in output filenames | `"translation"` |
+
+---
 
 ### 📄 `02_add_marker.ipynb`
 
