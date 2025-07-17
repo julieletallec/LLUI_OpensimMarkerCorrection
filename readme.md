@@ -488,8 +488,61 @@ You are free to customize various aspects of the model, depending on your experi
 
 ---
 ## 📁 example_osim_setup_files
----
-## 📁 example_model_files
+### 📄 `scaling_setup.xml` – Scaling Setup File
+
+This XML file defines how an OpenSim musculoskeletal model should be scaled to fit a specific subject based on anatomical markers and measurements from a static trial.
+
+
+#### 🧱 Structure
+
+- **General subject info**
+  ```xml
+  <mass>, <height>, <age>
+  ```
+  Used to define subject-specific metadata (can be adjusted for your case).
+
+- **GenericModelMaker**
+  ```xml
+  <model_file>, <marker_set_file>
+  ```
+  Specifies the generic (unscaled) model and the marker set to use.
+
+- **ModelScaler**  
+  This section:
+  - Defines the **scaling logic** using marker pairs and segment-specific measurements.
+  - Uses `<MeasurementSet>` containing several `<Measurement>` elements.
+  - Each measurement has:
+    - A `<MarkerPairSet>` defining which markers determine the scaling.
+    - A `<BodyScaleSet>` specifying which body segments to scale.
+
+- **ScaleSet (optional)**  
+  Allows hardcoding of custom scaling factors for specific segments.
+
+- **MarkerPlacer**
+  This section:
+  - Applies inverse kinematics to place markers correctly on the scaled model.
+  - Contains `<IKTaskSet>` to specify which markers and coordinates should be prioritized or ignored.
+  - Outputs a `.mot` file representing the static pose and the scaled `.osim` model.
+
+
+#### 🛠️ What Can Be Modified?
+
+You are free to:
+
+- Change `mass`, `height`, and `age` values to fit your subject.
+- Update `<model_file>` and `<marker_set_file>` to reference your own model and marker set.
+- Add, remove, or modify any `<Measurement>` or `<MarkerPair>` block to adjust how body segments are scaled.
+- Customize `<BodyScale>` and enable/disable scaling along the X, Y, or Z axes.
+- Change marker task weights in `<IKMarkerTask>` to give more importance to specific markers.
+- Use or ignore specific coordinates with `<IKCoordinateTask>` by adjusting the `<apply>` flags.
+
+
+#### ⚠️ Notes
+
+- If the model scaling results are unrealistic (e.g., abnormal segment dimensions), make sure your `<MeasurementSet>` definitions match the actual distances in your calibration data.
+- Marker weights affect how well the virtual model aligns with the actual marker data.
+- Marker names and segment references must exactly match those in the marker set file and the OpenSim model.
+
 ---
 ## 📁 utils
 ### 📄 `analysis_utils.py`
