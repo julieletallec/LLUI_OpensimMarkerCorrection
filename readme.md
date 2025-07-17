@@ -277,6 +277,86 @@ To use this notebook for other experimental contexts or hypotheses:
 
 
 ### 📄 `03_test_quantification_of_model_displacements.ipynb`
+
+#### ✅ What This Notebook Does
+
+This notebook evaluates **multi-day calibration consistency** across several StimuLOOP patients by comparing the marker positions obtained from daily static trials with those from a **single averaged (corrected) model**.
+
+The calibration `.c3d` files from 16 training days are converted to `.trc`, aligned, and then averaged to generate a representative, corrected calibration. The **marker displacement error** between the daily calibrations and this averaged model is then analyzed.
+
+> 📊 This analysis is useful to understand how much calibration variation occurs in real-world, longitudinal data collection, and whether a single averaged model might be a more robust reference.
+
+
+#### 🎯 Goal & Outcome
+
+- **Goal:** Quantify marker position variability across 16 sessions and evaluate the feasibility of replacing per-day scaling with a single averaged calibration.
+- **Outcome:** For each patient:
+  - One `.trc` file representing the averaged static calibration
+  - 16 individually scaled calibration files
+  - Marker-wise and day-wise displacement plots against the averaged model
+
+
+#### 🔬 What’s Being Analyzed
+
+- For each patient:
+  - 16 daily `.c3d` calibration files (T0–T15)
+  - Converted to `.trc`, then **aligned segment-wise** (based on each anatomical segment’s local marker CoM)
+  - Averaged into a **single `.trc` file**
+  - Used to scale a "corrected" OpenSim model
+  - Marker distances between each individual day and the averaged model are computed and plotted
+
+
+#### 📂 Requirements to Run
+
+- Folder structure like: `stimuloop patient data/S001/CalibrationT0.c3d` ... `CalibrationT15.c3d`
+- 16 static calibration trials per patient
+- OpenSim model and marker set
+- A scaling setup XML template
+
+
+#### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `DATA_FOLDER` | Location of StimuLOOP patient `.c3d` data | `"stimuloop patient data"` |
+| `RESULTS_FOLDER` | Where all outputs and plots are saved | `"stimuloop_displacement_error_results"` |
+| `N_DAYS` | Number of calibration days to process | `16` |
+| `MARKERS` | Marker list used for analysis and alignment | `[“LASIS”, “RASIS”, ...]` |
+| `PATIENT_ID` | ID of patient for single-patient evaluation | `"S001"` |
+
+
+#### 👨‍⚕️ Two Modes of Operation
+
+1. **Batch Mode (All Patients):**
+   - Automatically processes every patient folder in `DATA_FOLDER`
+   - Skips any with missing `.c3d` files
+
+2. **Single Patient Mode:**
+   - Manually specify `PATIENT_ID`
+   - Useful for debugging or visualizing a single case
+
+
+#### 📈 What You Get
+
+- 16 aligned `.trc` calibration files per patient
+- 1 averaged `.trc` calibration file per patient
+- 1 scaled model based on the average
+- 📊 Two diagnostic plots:
+  - **Per-marker RMSE across days** (boxplot per marker)
+  - **Per-day RMSE across markers** (boxplot per day)
+
+
+#### 🔁 Adapt for New Studies
+
+You can easily adapt this pipeline for:
+
+- A different number of calibration sessions (e.g., `N_DAYS = 5`)
+- Different marker sets (`MARKERS`)
+- Custom alignment strategies (`non_rigid=True`, `recenter_strategy="pelvis"`)
+
+> 🧪 This pipeline is ideal for analyzing inter-session consistency or designing protocols where per-day recalibration is to be minimized.
+
+
 ---
 ## 📁 example_c3d_files
 ---
