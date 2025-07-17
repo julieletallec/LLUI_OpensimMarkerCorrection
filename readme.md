@@ -132,7 +132,7 @@ This notebook performs **marker displacement correction** across 15 days of repe
 | `RESULTS_FOLDER` | Folder where outputs are saved | `"results_marker_displacement_correction"` |
 | `PREFIX` | Prefix used for output model and motion filenames | `"averaged"` |
 
-
+---
 ## 📁 TEST_PIPELINES
 ### 📄 `01_test_caren_simulated_displacements.ipynb`
 
