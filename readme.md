@@ -450,6 +450,42 @@ You are free to:
 
 ---
 ## 📁 example_model_files
+
+This folder contains OpenSim musculoskeletal model files used in the pipeline. In this project, we use the `gait2354_simbody.osim` model.
+
+### 📄 Model Used
+
+- **Model:** `gait2354_simbody.osim`
+- **Structure:** Includes a simplified anatomical structure with:
+  - A **trunk**
+  - A **pelvis**
+  - Two **legs** (left and right), each with a thigh, shank, and foot
+
+This model is widely used in gait analysis and comes with predefined joint definitions, degrees of freedom, and marker attachment sites.
+
+
+
+### 🛠️ What Can Be Modified?
+
+You are free to customize various aspects of the model, depending on your experimental needs:
+
+| Component | What You Can Modify |
+|----------|---------------------|
+| **Mass properties** | Change the mass, center of mass, and inertia for each segment |
+| **Segment geometry** | Modify segment lengths or geometries to match specific populations |
+| **Joint limits** | Update the lower and upper bounds of kinematic ranges (e.g., hip flexion range) |
+| **Degrees of freedom** | Adjust joint types or add/remove joints if needed |
+| **Marker definitions** | Add or reposition markers for use with different marker sets |
+| **Muscle/tendon models** | While not used in this project, these components can also be adapted if you're doing forward dynamics or muscle-driven simulations |
+
+
+
+### ⚠️ Notes
+
+- Any changes to the model should be made with care, especially when modifying joint definitions or coordinate systems, as this can affect IK and scaling accuracy.
+- Be consistent: if you change marker names or structure, update your `.xml` marker set files and associated scripts accordingly.
+- If the results of the **inverse kinematics** seem weird (e.g., limited motion, unrealistic postures), it may be because the **kinematic boundaries** in the `.osim` model are too narrow. You may need to widen these joint limits to allow the solver to find more realistic solutions.
+
 ---
 ## 📁 example_osim_setup_files
 ---
