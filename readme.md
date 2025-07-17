@@ -11,9 +11,9 @@
 ## 📁 TEST_PIPELINES
 ### 📄 `01_test_caren_simulated_displacements.ipynb`
 
-### 📄 `02_add_marker.ipynb`
+### 📄 `02_test_opensim_displacements.ipynb`
 
-### 📄 `03_correct_marker_displacement_15_days.ipynb`
+### 📄 `03_test_quantification_of_model_displacements.ipynb`
 ---
 ## 📁 example_c3d_files
 ---
