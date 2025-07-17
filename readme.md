@@ -28,7 +28,6 @@
 This module provides a suite of analysis and visualization tools for evaluating the **effectiveness of motion data correction**, focusing on **marker trajectories (TRC)** and **kinematic signals (MOT)**.  
 It enables statistical comparison, RMSE evaluation, and visual inspection across sessions or correction stages.
 
----
 
 | Function | Description |
 |----------|-------------|
@@ -41,7 +40,6 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 | `compare_markers_to_average` | Compare aligned marker positions from multiple sessions to the group average. Plots total and axis-specific errors per marker. |
 | `compare_markers_by_day` | Analyze marker error distributions per day, grouped by body region. Highlights segment-wise drift or inconsistency. |
 
----
 
 
 
@@ -50,7 +48,6 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 
 This utility module provides core functionality for processing and preparing motion capture datasets. It includes tools for converting file formats (TRC ↔ C3D), transforming marker orientations, aligning static poses across sessions, and extracting key gait events. These functions are particularly useful for workflows involving OpenSim, motion analysis, and marker-based calibration procedures.
 
----
 
 | Function | Description |
 |----------|-------------|
@@ -67,14 +64,12 @@ This utility module provides core functionality for processing and preparing mot
 | `prepare_aligned_calibrations` | Loads and aligns multiple static calibration TRC files using non-rigid registration and optional recentring strategies. |
 | `extract_gait_cycles` | Extracts left foot 'Foot Off' event times from one or more CSV gait event files and aligns them by cycle index. |
 
----
 
 
 ## `io_utils.py`
 
 This module provides utility functions for managing input/output operations with TRC and MOT files, as well as organizing calibration data. It supports OpenSim-compatible formats and structured processing workflows.
 
----
 
 | Function | Description |
 |----------|-------------|
@@ -86,14 +81,12 @@ This module provides utility functions for managing input/output operations with
 | `save_aligned_trc` | Saves a 3D aligned marker pose array to a new TRC file using the structure from a reference TRC file. |
 | `load_average_and_save_trc_bis` | Loads multiple TRC files, averages the marker data across all files, and saves the result to a new TRC file with a consistent header and marker order. |
 
----
 
 
 ## `opensim_kinematics_utils.py`
 
 This module provides utility functions for creating, modifying, and executing OpenSim XML configurations for scaling, inverse kinematics, and point kinematics workflows. It also includes tools for marker processing and TRC reconstruction from analysis results.
 
----
 
 | Function | Description |
 |----------|-------------|
@@ -108,14 +101,12 @@ This module provides utility functions for creating, modifying, and executing Op
 | `inverse_kinematics` | Executes the Inverse Kinematics tool based on motion and calibration data, producing a `.mot` file. |
 | `point_kinematics` | Runs a PointKinematics analysis for specified markers and converts the result into a usable `.trc` file. |
 
----
 
 
 ## `pipeline_utils.py`
 
 This module provides high-level orchestration utilities to simulate, displace, correct, and analyze marker sets using OpenSim pipelines. It automates batch processing of marker perturbation experiments for both real and simulated data.
 
----
 
 | Function | Description |
 |----------|-------------|
