@@ -89,7 +89,50 @@ This notebook is used to **manually add a missing marker** to a motion capture t
 
 
 ### 📄 `03_correct_marker_displacement_15_days.ipynb`
----
+#### ✅ What This Notebook Does
+
+This notebook performs **marker displacement correction** across 15 days of repeated calibration trials by:
+
+1. Converting each day’s calibration `.c3d` file into a `.trc` file.
+2. Averaging all 15 `.trc` files to produce a single, stable calibration marker configuration.
+3. Scaling an OpenSim model using the averaged calibration file.
+4. Using this corrected model to re-run **Inverse Kinematics** and **Point Kinematics** on each dynamic trial.
+5. Producing corrected `.trc` and `.c3d` files for all trials.
+
+> 🛠️ This workflow reduces the effect of day-to-day marker placement variability and improves consistency across sessions.
+
+
+#### 🎯 Goal & Outcome
+
+- **Goal:** Generate more stable and consistent kinematics by averaging multiple calibrations and applying the result to correct all dynamic trials.
+- **Outcome:** You obtain 15 corrected `.trc` and `.c3d` files with more reliable marker positions.
+
+
+
+#### 📂 Requirements to Run
+
+- 15 daily calibration `.c3d` files (e.g., `CalibrationT1.c3d` to `CalibrationT15.c3d`)
+- 15 dynamic `.c3d` files (e.g., `BaselineT1.c3d` to `BaselineT15.c3d`)
+- A model marker set XML
+- An OpenSim musculoskeletal model
+- A scaling setup XML template
+
+
+
+#### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `DATA_FOLDER` | Folder containing `.c3d` files | `"S001"` |
+| `MARKERSET_FILE` | Path to model marker set XML | `"example_markerset_files/HMB2_MODEL_markers.xml"` |
+| `MARKERS` | List of markers used for IK and averaging | `[...marker names...]` |
+| `TEMPLATE_SCALING_SETUP_FILE` | XML config template for scaling | `"template_scaling_setup.xml"` |
+| `N_DAYS` | Number of repeated sessions (calibration + dynamic) | `15` |
+| `FILES_TO_CORRECT` | Base name of dynamic trials to correct | `"Baseline"` |
+| `RESULTS_FOLDER` | Folder where outputs are saved | `"results_marker_displacement_correction"` |
+| `PREFIX` | Prefix used for output model and motion filenames | `"averaged"` |
+
+
 ## 📁 TEST_PIPELINES
 ### 📄 `01_test_caren_simulated_displacements.ipynb`
 
