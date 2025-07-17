@@ -488,7 +488,7 @@ You are free to customize various aspects of the model, depending on your experi
 
 ---
 ## 📁 example_osim_setup_files
-### 📄 `scaling_setup.xml` – Scaling Setup File
+### 📄 Scaling Setup File (`scaling_setup.xml`)
 
 This XML file defines how an OpenSim musculoskeletal model should be scaled to fit a specific subject based on anatomical markers and measurements from a static trial.
 
