@@ -3,8 +3,6 @@
 ---
 ## 📁 FINAL_USABLE_PIPELINES
 ### 📄 `01_translate_markerset.ipynb`
----
-
 #### ✅ What This Notebook Does
 
 This notebook simulates the use of a **different marker set** by:
@@ -43,9 +41,52 @@ This notebook simulates the use of a **different marker set** by:
 | `RESULTS_FOLDER` | Folder where outputs are saved | `"results_marker_translation"` |
 | `PREFIX` | Prefix used in output filenames | `"translation"` |
 
----
-
 ### 📄 `02_add_marker.ipynb`
+
+#### ✅ What This Notebook Does
+
+This notebook is used to **manually add a missing marker** to a motion capture trial, using its estimated coordinates and associated body part in the OpenSim model. The steps simulate how the marker would have moved if it had been captured during the session.
+
+1. **Scales** an OpenSim model using a calibration C3D and the marker set (without the missing marker).
+2. Runs **Inverse Kinematics** to extract model motion from the incomplete C3D.
+3. **Adds the missing marker** to the marker set XML with known body-relative coordinates.
+4. Runs **Point Kinematics** to reconstruct the trajectory of the added marker.
+5. **Generates a new `.trc` and `.c3d` file** including the synthetic marker trajectory.
+
+> ➕ This workflow is useful when retroactively adding virtual markers to trials where some were not physically captured.
+
+#### 🎯 Goal & Outcome
+
+- **Goal:** Insert a missing marker into a motion trial based on model kinematics and known body-relative position.
+- **Outcome:** You obtain `.trc` and `.c3d` files that include the reconstructed trajectory of the newly added marker.
+
+#### 📂 Requirements to Run
+
+- A C3D file for static calibration
+- A C3D file missing the marker to be added
+- A model marker set XML (excluding the missing marker)
+- Coordinates of the missing marker in the frame of the associated body part
+- Name of the OpenSim body part to which the marker belongs
+- An OpenSim musculoskeletal model
+- A scaling setup XML template
+
+#### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `MODEL` | Path to the OpenSim model file | `"gait2354_simbody.osim"` |
+| `MARKERSET_FILE` | Path to marker set XML **excluding** the missing marker | `"example_markerset_files/HMB2_MODEL_LUCILLE_markers.xml"` |
+| `MARKERS` | List of marker names (used for scaling & IK) | `[...marker names...]` |
+| `C3D_CALIBRATION_FILE` | C3D for scaling | `"example_c3d_files/GCAP_S_03_TPose.c3d"` |
+| `C3D_FILE_TO_ADD_MARKER` | C3D file that lacks the marker | `"example_c3d_files/GCAP_S_03_TPose.c3d"` |
+| `TEMPLATE_SCALING_SETUP_FILE` | XML config template for scaling | `"template_scaling_setup.xml"` |
+| `NAME` | Name of the marker to add | `"RStatic8"` |
+| `COORDINATES` | 3D position of the marker in local frame | `(0.0412685, -0.0218856, 0.0594629)` |
+| `BODY_PART` | OpenSim body to attach the marker to | `"toes_r"` |
+| `UPDATED_MARKERSET` | Path to save the new XML with added marker | `"results_add_marker/HBM2_MODEL_markers_Lucille_updated.xml"` |
+| `RESULTS_FOLDER` | Folder where outputs are saved | `"results_add_marker"` |
+| `PREFIX` | Prefix used in output filenames | `"add_marker"` |
+
 
 ### 📄 `03_correct_marker_displacement_15_days.ipynb`
 ---
