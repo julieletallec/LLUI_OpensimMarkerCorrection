@@ -203,6 +203,78 @@ This makes the pipeline **fully reusable** for testing other marker placements, 
 
 
 ### 📄 `02_test_opensim_displacements.ipynb`
+#### ✅ What This Notebook Does
+
+This notebook **predicts and evaluates the impact of marker displacements** using **fully virtual simulations in OpenSim**. Unlike the CAREN-based study (see `01_test_caren_simulated_displacements.ipynb`), this pipeline simulates displacements by modifying marker definitions and using **OpenSim's PointKinematics** tool—no additional physical markers or modified `.c3d` files are required.
+
+> 💡 This is ideal for **designing or pre-evaluating experimental setups** *before* conducting real trials. You can test how displacing specific markers affects kinematics, and estimate correction outcomes in advance.
+
+The pipeline is organized in 4 main parts:
+
+1. **Ground Truth Generation**
+   - Derives clean `.trc` and `.mot` data from calibration and walking `.c3d` trials.
+   - Uses **double PointKinematics** steps to ensure consistency and comparability with displaced/virtual data.
+
+2. **Simulated Marker Displacements**
+   - Marker displacements are simulated by modifying marker definitions in the marker set XML.
+   - No physical recording of displaced markers is needed—their positions are **simulated from joint angles** using OpenSim.
+
+3. **Correction with Averaged Calibration**
+   - All displaced calibration trials are averaged to create a "neutral" model.
+   - This model is then used to correct the walking trials, producing "corrected" `.trc` and `.mot` outputs.
+
+4. **Evaluation**
+   - Displaced and corrected results are compared against ground truth in terms of **marker trajectories** and **joint angles**, using RMSE.
+
+
+#### 🎯 Goal & Outcome
+
+- **Goal:** Predict how virtual displacements of anatomical markers affect motion analysis and assess the effectiveness of model-based correction.
+- **Outcome:** 
+  - 15 displaced and 15 corrected `.trc` and `.mot` files
+  - Ground truth versions generated under comparable conditions
+  - Per-marker and per-kinematic RMSE evaluations before and after correction
+
+
+#### 🤖 How Displacements Are Simulated
+
+- Markers like `"RASIS"` or `"LLEK"` are redefined with **virtual positional offsets** in the OpenSim marker set XML.
+- These offsets simulate displacements of **10–20 mm** in anterior, posterior, medial, or lateral directions.
+- The simulation uses:
+  - **`deplacer_markers()`** to update marker definitions
+  - **OpenSim's `PointKinematics`** to compute virtual marker trajectories from `.mot` files
+
+
+#### 📂 Requirements to Run
+
+- Original `.c3d` calibration and walking files containing **only ground truth markers**
+- A gait event file aligned with the dynamic trial
+- OpenSim musculoskeletal model and marker set (`.osim`, `.xml`)
+- A scaling setup template (`.xml`)
+
+
+#### 🔧 Changeable Parameters
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `SUBJECT` | Participant identifier | `"Mathieu"` |
+| `N_CYCLES` | Number of gait cycles to include | `10` |
+| `N_COMBOS` | Number of marker displacement configurations to simulate | `15` |
+| `MARKERS_WITH_DISPLACEMENT` | Markers to simulate displacement on | `["RASIS", "LLEK", "LMM", ...]` |
+| `KINEMATICS` | Joint angles to track and compare | `["hip_flexion_r", "pelvis_tilt", ...]` |
+| `RESULTS_FOLDER` | Folder to store all outputs | `"test_opensim_displacements_Mathieu"` |
+
+
+#### 🔁 Adapt for New Experiments
+
+To use this notebook for other experimental contexts or hypotheses:
+
+- **Change the displaced markers** by updating `MARKERS_WITH_DISPLACEMENT`.
+- **Modify displacement logic** inside `deplacer_markers()` to simulate different magnitudes or directions.
+- **Adjust the number of combos or gait cycles** to match your validation needs.
+
+> 🛠 This pipeline is fully modular and allows easy adaptation for future pilot testing or protocol development.
+
 
 ### 📄 `03_test_quantification_of_model_displacements.ipynb`
 ---
