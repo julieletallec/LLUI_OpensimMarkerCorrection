@@ -1,29 +1,34 @@
 
 # DETAILED FILE DESCRIPTION
 ---
-# 📁 FINAL_USABLE_PIPELINES
-## 📄 `01_translate_markerset.ipynb`
+## 📁 FINAL_USABLE_PIPELINES
+### 📄 `01_translate_markerset.ipynb`
 
-## 📄 `02_add_marker.ipynb`
+### 📄 `02_add_marker.ipynb`
 
-## 📄 `03_correct_marker_displacement_15_days.ipynb`
+### 📄 `03_correct_marker_displacement_15_days.ipynb`
 ---
 # 📁 TEST_PIPELINES
+### 📄 `01_test_caren_simulated_displacements.ipynb`
+
+### 📄 `02_add_marker.ipynb`
+
+### 📄 `03_correct_marker_displacement_15_days.ipynb`
 ---
-# 📁 example_c3d_files
+## 📁 example_c3d_files
 ---
-# 📁 example_gaitevents_files
+## 📁 example_gaitevents_files
 ---
-# 📁 example_marker_files
+## 📁 example_marker_files
 ---
-# 📁 example_model_files
+## 📁 example_model_files
 ---
-# 📁 example_osim_setup_files
+## 📁 example_osim_setup_files
 ---
-# 📁 example_model_files
+## 📁 example_model_files
 ---
-# 📁 utils
-## `analysis_utils.py`
+## 📁 utils
+### `analysis_utils.py`
 
 This module provides a suite of analysis and visualization tools for evaluating the **effectiveness of motion data correction**, focusing on **marker trajectories (TRC)** and **kinematic signals (MOT)**.  
 It enables statistical comparison, RMSE evaluation, and visual inspection across sessions or correction stages.
@@ -44,7 +49,7 @@ It enables statistical comparison, RMSE evaluation, and visual inspection across
 
 
 
-## `data_processing_utils.py`
+### `data_processing_utils.py`
 
 This utility module provides core functionality for processing and preparing motion capture datasets. It includes tools for converting file formats (TRC ↔ C3D), transforming marker orientations, aligning static poses across sessions, and extracting key gait events. These functions are particularly useful for workflows involving OpenSim, motion analysis, and marker-based calibration procedures.
 
@@ -66,7 +71,7 @@ This utility module provides core functionality for processing and preparing mot
 
 
 
-## `io_utils.py`
+### `io_utils.py`
 
 This module provides utility functions for managing input/output operations with TRC and MOT files, as well as organizing calibration data. It supports OpenSim-compatible formats and structured processing workflows.
 
@@ -83,7 +88,7 @@ This module provides utility functions for managing input/output operations with
 
 
 
-## `opensim_kinematics_utils.py`
+### `opensim_kinematics_utils.py`
 
 This module provides utility functions for creating, modifying, and executing OpenSim XML configurations for scaling, inverse kinematics, and point kinematics workflows. It also includes tools for marker processing and TRC reconstruction from analysis results.
 
@@ -103,7 +108,7 @@ This module provides utility functions for creating, modifying, and executing Op
 
 
 
-## `pipeline_utils.py`
+### `pipeline_utils.py`
 
 This module provides high-level orchestration utilities to simulate, displace, correct, and analyze marker sets using OpenSim pipelines. It automates batch processing of marker perturbation experiments for both real and simulated data.
 
