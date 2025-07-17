@@ -383,8 +383,20 @@ Each `<Marker>` in the XML file looks like this:
     ...
 </Marker>
 ```
+#### 🛠️ What can be modified?
 
+You are free to:
 
+- **Add or remove markers**.
+- **Rename markers**, as long as the new names are consistent with your other files and scripts.
+- **Change the body segment** (`<body>`) the marker is attached to.
+- **Change the location** (`<location>`) of a marker to simulate different placements.
+- Optionally **adjust visual properties** in the `<VisibleObject>` block (not mandatory for simulation to run correctly).
+
+#### ⚠️ Notes
+
+- If you add or rename markers, make sure to update all scripts and configuration files that reference those names.
+- Modifying marker locations is how **simulated displacements** are implemented in this project (e.g., adding markers with suffixes like `_90`, `_180`, etc.).
 
 ---
 ## 📁 example_model_files
