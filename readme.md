@@ -359,6 +359,28 @@ You can easily adapt this pipeline for:
 
 ---
 ## 📁 example_c3d_files
+This folder contains example **C3D files** used throughout the project.
+
+C3D is a standard file format in motion capture that contains:
+
+- **Marker trajectories** (3D positions of markers over time)
+- **Force plate data** (ground reaction forces, moments, and center of pressure)
+- **Analog signals** (optional, not always used)
+
+We use two types of C3D trials:
+
+- **Calibration trials** — static poses used to scale the musculoskeletal model
+- **Dynamic trials** — motion trials (e.g., walking) used to compute joint kinematics
+
+➡️ These `.c3d` files are **always converted to `.trc` format** (marker trajectories only) for processing in OpenSim.
+
+### 🔍 What’s typically used?
+
+- Marker trajectories for inverse and point kinematics
+- Force plate data for later integration with `.trc` or `.mot` files (optional)
+
+⚠️ Make sure your own C3D files include the necessary **marker labels** expected by the scripts and the **force data**, especially for dynamic trials.
+
 ---
 ## 📁 example_gaitevents_files
 ---
